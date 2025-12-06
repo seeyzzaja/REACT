@@ -154,7 +154,7 @@ export default function TodoApp() {
 
         <ul className="todo-list" aria-live="polite">
           {filteredTodos.length === 0 && (
-            <li className="empty">Tidak ada tugas untuk filter ini.</li>
+            <li className="empty">Tidak ada tugas.</li>
           )}
 
           {filteredTodos.map((todo) => (
