@@ -1,9 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import useCart from "../Hooks/UseCart";
-import Cart from "./Cart";
-import LoginForm from "../pages/Login";
-import { CartProvider } from "../Context/CartContext";
+
 function FatchProduk() {
   const { addToCart } = useCart();
 
