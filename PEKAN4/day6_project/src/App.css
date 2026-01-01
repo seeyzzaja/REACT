@@ -1,0 +1,243 @@
+/* ===============================
+   RESET & GLOBAL
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===============================
+   THEME
+================================ */
+.light {
+  background-color: #f4f6f8;
+  color: #1f2937;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff;
+  color: #1e40af;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav button:hover {
+  opacity: 0.9;
+}
+
+/* ===============================
+   PRODUCT GRID
+================================ */
+.grid {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* ===============================
+   PRODUCT CARD
+================================ */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dark .card {
+  background-color: #1e293b;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.card a:hover {
+  background-color: #1e40af;
+}
+
+/* ===============================
+   PRODUCT DETAIL
+================================ */
+.detail {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.detail img {
+  width: 300px;
+  object-fit: contain;
+}
+
+.detail h2 {
+  margin-bottom: 12px;
+}
+
+.detail p {
+  margin-bottom: 12px;
+}
+
+.detail strong {
+  font-size: 18px;
+  color: #2563eb;
+}
+
+.dark .detail strong {
+  color: #60a5fa;
+}
+
+/* ===============================
+   LOGIN
+================================ */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.center button {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.center button:hover {
+  background-color: #1e40af;
+}
+
+/* ===============================
+   DASHBOARD
+================================ */
+h2 {
+  padding: 24px;
+}
+
+.row {
+  margin: 0 24px 12px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark .row {
+  background-color: #1e293b;
+}
+
+.row button {
+  padding: 6px 12px;
+  background-color: #dc2626;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.row button:hover {
+  background-color: #b91c1c;
+}
+
+/* ===============================
+   LOADING & ERROR
+================================ */
+p {
+  padding: 16px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail img {
+    margin: auto;
+  }
+}
